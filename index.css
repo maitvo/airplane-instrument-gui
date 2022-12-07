@@ -87,7 +87,7 @@ h.disclaimer{
 
 #welcome {
   text-indent: 1px;
-  font-size: 8vw;
+  font-size: 5vw;
 }
 
 #hiya {
@@ -95,9 +95,9 @@ h.disclaimer{
   font-family: "Max-Condensed";
 }
 
-/* About ------------------------------------------------------------------------------------- */
+/* Project Idea ------------------------------------------------------------------------------------- */
 
-.About {
+.Idea {
     color: #ffffff;
     background-color: rgb(31, 30, 30);
     /* padding-left: 5%; */
@@ -123,11 +123,11 @@ h.disclaimer{
   width: 300px;
 }
 
-/* Meet Us----------------------------------------------------------------------------------------------------- */
+/* Instructions----------------------------------------------------------------------------------------------------- */
 
 
 
-.Meet_the_Team {
+.Instr {
     color: #ffffff;
     background-color:  rgb(31, 30, 30);
     padding-bottom: 15px;
@@ -138,14 +138,14 @@ h.disclaimer{
     /* margin: 1px; */
 }
 
-.Meet_the_Team h {
+.Instr h {
   font-family: "Max-Condensed";
   font-size: 150%;
   float: right;
   margin-right: 8%;
 }
 
-.Meet_the_Team h img {
+.Instr h img {
     /* float: right; */
     width: 60px;
 }
@@ -168,13 +168,39 @@ h.disclaimer{
   font-size: 150%;
 }
 
+/* Project Idea ------------------------------------------------------------------------------------- */
 
+.Hardware {
+  color: #ffffff;
+  background-color: rgb(31, 30, 30);
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
+  padding-top: 3%;
+  padding-bottom: 3%;
+  /* margin: 1px; */
+}
+
+#about-info {
+font-family: "Max-Light";
+font-size: 150%;
+
+padding-right: 8%;
+padding-left: 8%;
+}
+
+#logo {
+text-align: center;
+}
+
+#logo img {
+width: 300px;
+}
 
 /* PDR----------------------------------------------------------------------------------------------------- */
 
 
 
-.PDR {
+.Slides {
     color: #ffffff;
     background-color:  rgb(31, 30, 30);
     text-align: center;

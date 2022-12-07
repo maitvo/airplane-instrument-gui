@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Team Ce-L'EAST-ial</title>
+    <title> Airplane Instrument</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -105,6 +105,7 @@
 
         </div>
     </div>
+
     <a id="Instr"></a>
     <div class="Instr">
       <br>
@@ -118,6 +119,97 @@
           <p>
             How to use this instrument:
           </p>
+          <br>
+          
+        </div>
+
+        
+
+      
+
+        <div id="intro">
+            <br><br>
+              <p><img src="TeamPics/ali.jpg" width=25% />
+                <br>
+                1. Go into a small aircraft.
+                <br>
+                2. Hook up to a computer for power.
+                <br>
+                3. Place on the hood of the aircraft in front of the pilot.
+                <br>
+                4. Turn on.
+                <br>
+                5. Fly and see the data populate!
+                <br>
+              </p>
+        </div> 
+        
+      
+        <br><br><br>
+
+        
+    </div>
+
+    <a id="Hardware-code"></a>
+    <div class="Hardware">
+      <br>
+        <div id="header">
+            Hardware Setup and Code
+            <hr style="border: .5px solid white;" />
+        </div>
+
+        <div id="intro">
+          <br><br>
+          <p>
+            Here is our hardware setup:
+          </p>
+          <br>
+
+
+          <br><br>
+          <p>
+            Our code contains IMU data (gyroscope, magnetometer), 
+            GPS data (coordinates, current time, # satellites connected, velocity, altitude, direction),
+            and a barometric pressure sensor (temperture, pressure).
+            <br><br>
+            It also contains software that integrates our uLCD with an HUD that will
+             display all of our data as a "hologram" on the windshield of the aircraft.
+             <br><br>
+             Here is the code:
+
+             <code>
+
+              void printAttitude(float ax, float ay, float az, float mx, float my, float mz)
+{
+    float roll = atan2(ay, az);
+    float pitch = atan2(-ax, sqrt(ay * ay + az * az));
+// touchy trig stuff to use arctan to get compass heading (scale is 0..360)
+    mx = -mx;
+    float heading;
+    if (my == 0.0)
+        heading = (mx .0) ? 180.0 : 0.0;
+    else
+        heading = atan2(mx, my)*360.0/(2.0*PI);
+    //pc.printf("heading atan=%f \n\r",heading);
+    heading -= DECLINATION; //correct for geo location
+    if(heading>180.0) heading = heading - 360.0;
+    else if(headin80.0) heading = 360.0 + heading;
+    else if(heading<0.0) heading = 360.0  + heading;
+
+
+             </code>
+
+             <div id="logo">
+              <img src="idea-pic.jpg"/>
+            </div>
+
+          </p>
+
+          
+          <br>
+          <br>
+          <br>
+          <br>
           <br>
           
         </div>
@@ -180,7 +272,6 @@
           <div id="header">
             <hr style="border: .5px solid white;" />
           </div>
-
 
          </div>
         
@@ -355,7 +446,7 @@
 </div>
 
 <div class="bottom">
-  <p>Made with love by Team Ce-L'east-ial using HTML, CSS, and Javascript. 
+  <p>Made with love by us using HTML, CSS, and Javascript. 
       View our source code on Github
       <a href="https://github.com/teamceleastial/teamceleastial.github.io" target="_blank">here.</a>
     </p>
