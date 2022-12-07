@@ -32,8 +32,9 @@
               <a href="#Home">HOME</a>
               <a href="#Idea">PROJECT IDEA</a>
               <a href="#Instr">INSTRUCTIONS</a>
-              <a href="#Info">HARDWARE/CODE</a> 
-              <a href="#pdr">SLIDES</a>  
+              <a href="#Parts">PARTS LIST</a>
+              <a href="#Hardware-code">HARDWARE/CODE</a> 
+              <a href="#Slides">SLIDES</a>  
           </div>
               
         </div>
@@ -150,73 +151,45 @@
         
     </div>
 
-    <a id="Hardware-code"></a>
-    <div class="Hardware">
+    <a id="Parts"></a>
+    <div class="Parts">
       <br>
         <div id="header">
-            Hardware Setup and Code
+            Parts List
             <hr style="border: .5px solid white;" />
         </div>
 
         <div id="intro">
           <br><br>
           <p>
-            Here is our hardware setup:
+            Electronics:
+            <br>
+              1. mbed
+                <br>
+                2. LCD Display: uLCD-144G2
+                <br>
+                3. Barometric Pressure Sensor: MPL3115A2
+                <br>
+                4. Inertial Measurement Unit (IMU): LSM9DS1 
+                <br>
+                5. GPS: GP20-U7
+                <br>
+                6. computer
+                <br>
+                7. Cord
+                <br>
+                8. Wires
+                <br>
+                <br><br>
+              Non-electronics:
+              <br>
+              1. Aircraft
           </p>
-          <br>
-
-
-          <br><br>
-          <p>
-            Our code contains IMU data (gyroscope, magnetometer), 
-            GPS data (coordinates, current time, # satellites connected, velocity, altitude, direction),
-            and a barometric pressure sensor (temperture, pressure).
-            <br><br>
-            It also contains software that integrates our uLCD with an HUD that will
-             display all of our data as a "hologram" on the windshield of the aircraft.
-             <br><br>
-             Here is the code:
-
-             <code>
-
-              void printAttitude(float ax, float ay, float az, float mx, float my, float mz)
-{
-    float roll = atan2(ay, az);
-    float pitch = atan2(-ax, sqrt(ay * ay + az * az));
-// touchy trig stuff to use arctan to get compass heading (scale is 0..360)
-    mx = -mx;
-    float heading;
-    if (my == 0.0)
-        heading = (mx .0) ? 180.0 : 0.0;
-    else
-        heading = atan2(mx, my)*360.0/(2.0*PI);
-    //pc.printf("heading atan=%f \n\r",heading);
-    heading -= DECLINATION; //correct for geo location
-    if(heading>180.0) heading = heading - 360.0;
-    else if(headin80.0) heading = 360.0 + heading;
-    else if(heading<0.0) heading = 360.0  + heading;
-
-
-             </code>
-
-             <div id="logo">
-              <img src="idea-pic.jpg"/>
-            </div>
-
-          </p>
-
-          
-          <br>
-          <br>
-          <br>
-          <br>
           <br>
           
         </div>
 
-        <div id="header">
-          <hr style="border: .5px solid white;" />
-      </div>
+        
 
       
 
@@ -243,12 +216,79 @@
         
     </div>
 
-    
-    <a id="pdr"></a>
-    <div class="PDRsection">
+    <a id="Hardware-code"></a>
+    <div class="Hardware">
       <br>
         <div id="header">
-            Preliminary Design Review
+            Hardware Setup and Code
+            <hr style="border: .5px solid white;" />
+        </div>
+
+        <div id="intro">
+          <br><br>
+          <p>
+            Here is our hardware setup:
+            <br><br>
+            <div id="logo">
+              <img src="idea-pic.jpg"/>
+            </div>
+            <br><br>
+            <br><br><br><br>
+            
+          </p>
+          <br>
+
+
+          <br><br>
+          <p>
+            Our code contains IMU data (gyroscope, magnetometer), 
+            GPS data (coordinates, current time, # satellites connected, velocity, altitude, direction),
+            and a barometric pressure sensor (temperture, pressure).
+            <br><br>
+            It also contains software that integrates our uLCD with an HUD that will
+             display all of our data as a "hologram" on the windshield of the aircraft.
+             <br><br>
+             Here is the code:
+             <br><br>
+             <div id="logo">
+              <img src="idea-pic.jpg"/>
+            </div>
+
+
+             <br><br><br><br><br><br><br><br><br><br><br><br>
+
+             Link to the code on github 
+             <a href="https://github.com/maitvo/airplane-instrument-gui/blob/main/mbed-code.cpp" target="_blank">here.</a>
+
+             
+
+             
+
+          </p>
+
+          
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+        </div>
+
+      
+        
+      
+        <br><br><br>
+
+        
+    </div>
+
+    
+    <a id="Slides"></a>
+    <div class="Slides">
+      <br>
+        <div id="header">
+            Demo
             <hr style="border: .5px solid white;" />
         </div>
 
@@ -298,7 +338,7 @@
           
           
 
-        <div class="PDR">
+        <div class="PDRsection">
 
             
           <a id="Section1"></a>
@@ -367,72 +407,7 @@
                 
             </div>
 
-            <a id="Section7"></a>
-            <div class="pdr-section">
-              <br><br><br>
-                
-                <div id="pdr-header">
-                    Payload Design and Instruments
-                </div>
-                <br>
-                <img src="pdrphotos/slide7.JPG"/>
-            </div>
-
-            <a id="Section8"></a>
-            <div class="pdr-section">
-              <br><br><br>
-              
-              <div id="pdr-header">
-                  Data Collection and Use
-              </div>
-              <br>
-              <img src="pdrphotos/slide8.JPG"/>
-            </div>
-
-            <a id="Section9"></a>
-            <div class="pdr-section">
-              <br><br><br>
-              
-              <div id="pdr-header">
-                  Undecim Portam System Overview and EDL
-              </div>
-              <br>
-              <img src="pdrphotos/slide9.JPG"/>
-            </div>
-
-            <a id="Section10"></a>
-            <div class="pdr-section">
-              <br><br><br>
-              
-              <div id="pdr-header">
-                  Descent System and Rover Overview
-              </div>
-              <br>
-              <img src="pdrphotos/slide10.JPG"/>
-            </div>
-
-            <a id="Section11"></a>
-            <div class="pdr-section">
-              <br><br><br>
-              
-              <div id="pdr-header">
-                  Risk Mitigation and Testing
-              </div>
-              <br>
-              <img src="pdrphotos/slide11.JPG"/>
-            </div>
-
-            <a id="Section12"></a>
-            <div class="pdr-section">
-              <br><br><br>
-              
-              <div id="pdr-header">
-                  Safety
-              </div>
-              <br>
-              <img src="pdrphotos/slide12.JPG"/>
-            </div>
-
+            
             <br><br>
             <br><br><br><br>        </div>
 

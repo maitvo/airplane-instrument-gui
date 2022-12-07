@@ -4,7 +4,13 @@ html{
   background-color:  rgb(31, 30, 30);
 }
 
-
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
 
 
 #header {
@@ -196,6 +202,33 @@ text-align: center;
 width: 300px;
 }
 
+/* Project Idea ------------------------------------------------------------------------------------- */
+
+.Parts {
+  color: #ffffff;
+  background-color: rgb(31, 30, 30);
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
+  padding-top: 3%;
+  padding-bottom: 3%;
+  /* margin: 1px; */
+}
+
+#about-info {
+font-family: "Max-Light";
+font-size: 150%;
+
+padding-right: 8%;
+padding-left: 8%;
+}
+
+#logo {
+text-align: center;
+}
+
+#logo img {
+width: 300px;
+}
 /* PDR----------------------------------------------------------------------------------------------------- */
 
 
