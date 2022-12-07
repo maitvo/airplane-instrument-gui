@@ -1,0 +1,380 @@
+html{
+  /* background-color: rgb(255, 255, 255); */
+  scroll-behavior: smooth;
+  background-color:  rgb(31, 30, 30);
+}
+
+
+
+
+#header {
+  font-family: "Mandatory";
+  font-size: 300%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+body{
+  margin: 0;
+}
+
+a:active {
+  color: rgb(117, 111, 111);
+}
+
+h.bold{
+  font-family: "Max-Old";
+}
+
+h.disclaimer{
+  font-family: "Max-Condensed";
+  color: red;
+}
+
+/* navbar -------------------------------------------------------------------------------------------- */
+.bar {
+  overflow: hidden;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  /* background-image: url("./photos/stars.jpg");
+  opacity: 70%; */
+  /* font-family: "NS-Light"; */
+  position: fixed;
+  width: 100%;
+  color: white;
+  background-color: rgb(31, 30, 30);
+  font-family: "Max-Condensed";
+
+}
+
+.nav-right {
+  float: right;
+}
+
+.nav-right a{
+  
+  color: white;
+  text-decoration: none;
+  padding-right: 13px;
+  padding-left: 13px;
+  padding-top: 100%;
+  padding-bottom: 100%;
+  font-size: 17px;
+}
+
+.nav-right a:hover {
+  /* background-image: url("./photos/moonnew.jpg"); */
+  color: rgb(117, 111, 111);
+  text-decoration: none;
+}
+
+/* Home ------------------------------------------------------------------------------------- */
+.Home {
+    background-image: url("./photos/Team_Slide.png");
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);    /*overlay*/
+
+    font-family: "Mandatory";
+
+    color: #ffffff;
+    background-color: rgb(31, 30, 30);
+    text-align: center;
+    padding: 18%;
+}
+
+#welcome {
+  text-indent: 1px;
+  font-size: 8vw;
+}
+
+#hiya {
+  font-size: 150%;
+  font-family: "Max-Condensed";
+}
+
+/* About ------------------------------------------------------------------------------------- */
+
+.About {
+    color: #ffffff;
+    background-color: rgb(31, 30, 30);
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* margin: 1px; */
+}
+
+#about-info {
+  font-family: "Max-Light";
+  font-size: 150%;
+
+  padding-right: 8%;
+  padding-left: 8%;
+}
+
+#logo {
+  text-align: center;
+}
+
+#logo img {
+  width: 300px;
+}
+
+/* Meet Us----------------------------------------------------------------------------------------------------- */
+
+
+
+.Meet_the_Team {
+    color: #ffffff;
+    background-color:  rgb(31, 30, 30);
+    padding-bottom: 15px;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    padding-top: 3%; 
+    padding-bottom: 3%;
+    /* margin: 1px; */
+}
+
+.Meet_the_Team h {
+  font-family: "Max-Condensed";
+  font-size: 150%;
+  float: right;
+  margin-right: 8%;
+}
+
+.Meet_the_Team h img {
+    /* float: right; */
+    width: 60px;
+}
+
+#intro {
+  margin-left: 8%;
+  margin-right: 5%;
+}
+
+#intro img{
+  margin-right: 20px;
+  float: left;
+  width: 300px;
+}
+
+
+
+#intro p{
+  font-family: "Max-Light";
+  font-size: 150%;
+}
+
+
+
+/* PDR----------------------------------------------------------------------------------------------------- */
+
+
+
+.PDR {
+    color: #ffffff;
+    background-color:  rgb(31, 30, 30);
+    text-align: center;
+    padding-bottom: 100%;
+}
+
+.PDRsection {
+    background-color: rgb(31, 30, 30);
+
+    padding-bottom: 15px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* margin: 1px; */
+    color: #ffffff;
+}
+
+.PDRsection #header{
+  padding-left: 5%;
+}
+
+.PDRsection p{
+  padding-right: 8%;
+  padding-left: 8%;
+  font-family: "Max-Light";
+  font-size: 150%;
+}
+
+.PDRsection img{
+  width: 100px;
+}
+
+
+.PDRsection video{
+  text-align: center;
+  font-family: "Max-Light";
+}
+
+#pdr-header {
+  font-family: "Max-Condensed";
+  font-size: 30px;
+}
+
+video{
+  width: 60%;
+}
+
+.video{
+  text-align: center;
+}
+
+.pdr-section img {
+  width: 75%;
+}
+
+
+
+/* PDR Sidebar ------------------------------------------------------------------------------------ */
+
+.sidebar {
+    padding-top: 50px;
+    width: 180px;
+    float: left; 
+    margin: 0;
+    width: 250px;
+    background-color: rgb(31, 30, 30);
+    color: ghostwhite;
+    position: sticky;
+    top: 10px;
+    height: 100%;
+    overflow: auto;
+
+    font-family: "Max-Condensed";
+
+    font-size: 13px;
+      }
+      
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding-left: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+      }
+      
+
+      
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    /* background-color: #4e4a8a; */
+    color: rgb(117, 111, 111);
+    text-decoration: none;
+    text-size-adjust: 12;
+}
+/* Active/current link */
+.sidebar a:active {
+  /* background-color: #4e4a8a; */
+  color: rgb(117, 111, 111);
+  /* text-size-adjust: 12; */
+    }
+      
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.PDR {
+    margin-left: 200px;
+    padding: 1px 16px;
+    /* height: 1000px; */
+}
+
+/* Bottom panel --------------------------------------------------------------- */
+
+.bottom {
+  background-color:  rgb(31, 30, 30);
+  text-align: center;
+  font-family: "Max-Condensed";
+  color: white;
+}
+
+.bottom a {
+  color: rgb(255, 175, 175);
+}
+
+.bottom a:hover{
+  color: rgb(253, 65, 65);
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+      
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      
+          }
+
+  .sidebar a {text-align: center;}
+  div.PDR {margin-left: 0;}
+
+  .Meet_the_Team h {
+    font-size: 120%;
+  }
+
+  #intro p{
+    /* font-family: "Max-Light"; */
+    font-size: 120%;
+  }
+
+
+
+  #about-info {
+    /* font-family: "Max-Light"; */
+    font-size: 120%;
+
+    /* padding-right: 8%;
+    padding-left: 8%; */
+  }
+
+  #header{
+    font-size: 40px;
+  }
+}
+      
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+.sidebar a {
+    text-align: center;
+    float: none;
+        }
+    }
+
+/* fonts ----------------------------------------------------------------*/
+@font-face{
+  font-family: "Mandatory";
+  src: url("./font/Mandatory.ttf");
+}
+
+@font-face{
+  font-family: "RS-BlackPersonal";
+  src: url("./font/RoonaSansBlackPersonal-Pz6B.ttf");
+}
+
+@font-face{
+  font-family: "Max-Condensed";
+  src: url("./font/maxellight/MaxellightCondensed-4BnlW.ttf");
+}
+
+@font-face{
+  font-family: "Max-Light";
+  src: url("./font/maxellight/MaxellightLight-eZ9Wn.ttf");
+}
+
+@font-face{
+  font-family: "Max-Old";
+  src: url("./font/maxellight/Maxellight-owvKo.ttf");
+}
+
+@font-face{
+  font-family: "NS-Regular";
+  src: url(./font/NotoSansJP-Regular.otf);
+}
