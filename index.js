@@ -38,7 +38,7 @@ function addContent(contentToAdd, callback) {
 setTimeout(function() {
 
     deleteContent(function() {
-        addContent("Welcome.");
+        addContent("Airplane Instrument Visualization");
     })
 
     
