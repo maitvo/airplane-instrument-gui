@@ -4,13 +4,6 @@ html{
   background-color:  rgb(31, 30, 30);
 }
 
-code {
-  font-family: Consolas,"courier new";
-  color: crimson;
-  background-color: #f1f1f1;
-  padding: 2px;
-  font-size: 105%;
-}
 
 
 #header {
@@ -202,6 +195,8 @@ text-align: center;
 width: 300px;
 }
 
+
+
 /* Project Idea ------------------------------------------------------------------------------------- */
 
 .Parts {
@@ -222,12 +217,13 @@ padding-right: 8%;
 padding-left: 8%;
 }
 
-#logo {
-text-align: center;
+#code-pic {
+  text-align: center;
 }
 
-#logo img {
-width: 300px;
+#code-pic img {
+  width: 600px;
+  height: auto;
 }
 /* PDR----------------------------------------------------------------------------------------------------- */
 
